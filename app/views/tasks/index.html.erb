@@ -1,0 +1,7 @@
+
+<ol>
+  <% @tasks.each do |task| %>
+  <p> <%= task.name %> <%= task.done %></p>
+  <% end %>
+  <%= link_to "Ajouter une tâche", new_task_path %>
+</ol>
